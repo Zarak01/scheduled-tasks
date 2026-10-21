@@ -12,6 +12,8 @@ month_now = now.month
 day_now = now.day
 
 all_birthdays = pandas.read_csv("birthdays.csv")
+MY_EMAIL = os.environ.get("my_email")
+MY_PASSWORD = os.environ.get("my_password")
 
 for (index, birth_info) in all_birthdays.iterrows():
     if birth_info.month == month_now and birth_info.day == day_now:
