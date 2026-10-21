@@ -34,5 +34,5 @@ for (index, birth_info) in all_birthdays.iterrows():
 
         with smtplib.SMTP("smtp.gmail.com", 587) as connection:
             connection.starttls()
-            connection.login(my_email, my_password)
+            connection.login(MY_EMAIL, MY_PASSWORD)
             connection.send_message(message)
