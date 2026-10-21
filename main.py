@@ -28,7 +28,7 @@ for (index, birth_info) in all_birthdays.iterrows():
 
         message = EmailMessage()
         message["Subject"] = "Birthday Wishes"
-        message["From"] = my_email
+        message["From"] = MY_EMAIL
         message["To"] = str(birth_info["email"])
         message.set_content(birthday_wish)
 
